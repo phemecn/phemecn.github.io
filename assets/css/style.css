@@ -769,8 +769,9 @@ blockquote footer {
 }
 
 .btn > i, .btn > span, .btn > svg {
-    position: relative;
-    z-index: 1;
+	position: relative;
+	z-index: 1;
+	color: #000000;
 }
 
 .btn .el-ripple-circle {
@@ -3483,11 +3484,15 @@ body.mmm-open .mmm {
 }
 
 .img-cover {
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	margin-right: 0px;
+	float: right;
+	clear: both;
+	border-width: thick;
 }
 
 .item-heading {
