@@ -21,7 +21,12 @@
 
 <link rel="preload" href="assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2" crossorigin>
-
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
 </head>
 
 <body>
@@ -150,29 +155,74 @@
 					</div>
 				</div>
 			</nav>
-			<div class="section">
+<div class="section">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
 							<div class="section-heading heading-center">
-								
 								<h1>加入服务器流程</h1>
 							</div>
-							<div class="content">
-								
-								<h4>1. 加入审核群
-</h4>
-								<p>&nbsp;
-</p>
-								<h4>2. </h4>
-								<p></p>
-								<h4>3. </h4>
-								<p></p>
-								<h4>4. </h4>
-								<p></p>
-								<h4>5. </h4>
-								<p></p>
-
+							<div class="tabs tabs-vertical">
+								<ul class="tabs-nav section-bgc">
+									<li class="active">①确保自己有账号</li>
+									<li>②游戏版本</li>
+									<li>③加入审核群</li>
+									<li>④参加入服考试</li>
+									<li>⑤加入服务器</li>
+								</ul>
+								<div class="tabs-container">
+									<div class="tabs-item content active">
+										
+										<ul>
+											<li>服务器已开启正版验证,
+										如果你有基岩服的游戏经验，可以直接看下一条</li>
+											<li>如果你从未玩过国际服，需要注册账号，小白可以查看<a href="post-220604.html">注册教程</a></li>
+											<li>服务器已开启白名单，请不要直接问地址是什么，需要先通过审核才能进入。</li>
+										</ul>
+									</div>
+									<div class="tabs-item content">
+										
+										<ul>
+											<li>服务器会保持与官方同步更新，目前版本可以询问群友</li>
+											<li>手机端下载可以点<a href="https://klpbbs.com/xz.html">这里</a>，仅供体验，请支持正版.</li>
+											<li>电脑玩家和苹果系统玩家请自行购买minecraft客户端</li>
+											
+										
+										</ul>
+									</div>
+									<div class="tabs-item content">
+										<p>由于无插件的保护，服务器需要筛选入服玩家<br>
+										点击下方按钮一键加入审核群
+										<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=0Wosuhl1jUV_Fp0D-QWKSKQMIXwhJox9&jump_from=webapi"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="Jhon Server审核群(通过后" title="Jhon Server审核群(通过后"></a></p>
+										
+										<ul><li>参加审核的玩家请务先加群，并保持在审核群内，方便及时联系</li>
+											<li>如果退群则默认放弃入服机会</li>
+										</ul>
+									</div>
+									<div class="tabs-item content">
+										
+										<ul><li>如果你已经加入了<strong>审核群</strong> ，会得到一份入服考试试卷。</li>
+											<li>在答题之前你需要先阅读<a href="laws.html">《JS服务器公约》</a>，入服考试为开卷考试，不限时间。</li>
+											<li>包括三部分:游戏技巧、服规考察、玩家自述。</li>
+											<li>所有玩家都需要这些流程，如果是朋友介绍，请填写《推荐玩家问卷》。</li>
+										</ul>
+									</div>
+									<div class="tabs-item content">
+										<p>如果你已经通过了审核，请先在群内绑定账号，机器人会自动将你添加进白名单。</p>
+									  <p>绑定方式：在群内发送<em>“绑定 xboxid”</em>中间一定要留空格</p>
+										
+									  <img src="assets/img/bond.jpg" class="rounded img-fluid" alt="Placeholder image" width="300">
+									  <p>绑定成功后，点击
+										  <a href="minecraft://?addExternalServer=Jhon Server|Jhon.frankq.top:19132" class="btn" width="40">
+											  <span><font color="#FFFFFF">一键加入服务器</font></span></a>
+										  <ul>
+											  <li>如果进服失败，请查看<a href="questions">《问题自查》</a></li>
+											  <li>如果绑定输入错误，在群内直接发送<em>“解绑”，就可以直接绑定</em></li>
+										</ul>
+										 
+										</p>
+                                    </div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -409,6 +459,10 @@
 <script src="assets/libs/spincrement/jquery.spincrement.min.js"></script>
 <script src="assets/libs/jquery-validation-1.19.3/jquery.validate.min.js"></script>
 <script src="assets/js/custom.js"></script>
-	
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+</script>
 </body>
 </html>
